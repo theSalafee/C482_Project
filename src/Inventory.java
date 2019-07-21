@@ -28,15 +28,15 @@ public class Inventory {
         allParts.remove(part);
     }
 
-//    public lookupPart(int partID) {
-//
-//        // Access ObservableList allParts declared above and get part by partID
-//        allParts.get(partID);
-//    }
+    public static Part lookupPart(int partID) {
 
-//    public lookupPart(String partName) {
+        // Access ObservableList allParts declared above and get part by partID
+        return allParts.get(partID);
+    }
+
+//    public static Part lookupPart(String partName) {
 //
-//        return ObservableList<Part>;
+//        return allParts.get(partName);
 //    }
 
 //    public void updatePart(int index, Part part) {
@@ -44,27 +44,27 @@ public class Inventory {
 //        return;
 //    }
 
+    public static ObservableList<Part> getAllParts() {
 
-//    public getAllParts() {
-//
-//
-//    }
+        // Return entire ObservableList
+        return allParts;
+    }
 
     //////////////////////
     // Products Methods //
     /////////////////////
 
-//    public void addProduct(Product product) {
+//    public static void addProduct(Product product) {
 //
 //        return;
 //    }
 
-//    public lookupProduct(int productID) {
+//    public static lookupProduct(int productID) {
 //
 //        return Product;
 //    }
 
-//    public lookupProduct(String productName) {
+//    public static lookupProduct(String productName) {
 //
 //        return ObservableList<Product>;
 //    }
