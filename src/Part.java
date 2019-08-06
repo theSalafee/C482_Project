@@ -1,4 +1,6 @@
-public class Part {
+
+
+public abstract class Part {
 
     // Private members
     private int id;
