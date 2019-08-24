@@ -6,6 +6,7 @@ public class InHouse extends Part {
     // Constructor
     public InHouse(int id, String name, double price, int stock, int min, int max, int machineID ){
 
+        // invoking base-class(Part) constructor
         super(id, price, stock, min, max, name);
 
         this.id = id;
