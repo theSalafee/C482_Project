@@ -3,12 +3,12 @@
 public abstract class Part {
 
     // Private members
-    protected int id;
-    protected double price;
-    protected int stock;
-    protected int min;
-    protected int max;
-    protected String name;
+    private int id;
+    private double price;
+    private int stock;
+    private int min;
+    private int max;
+    private String name;
 
     // Class Constructor
     public Part(int id, double price, int stock, int min, int max, String name) {
