@@ -1,14 +1,20 @@
-public class InHouse extends Part {
+package Model;
+
+/**
+ *
+ * @author naasirbush
+ */
+public class InhousePart extends Part {
+
 
     // Private class member
     private int machineID;
 
     // Constructor
-    public InHouse(int id, double price, int stock, int min, int max, String name, int machineID) {
+    public InhousePart(int id, double price, int stock, int min, int max, String name, int machineID) {
         super(id, price, stock, min, max, name);
+
         this.machineID = machineID;
-
-
     }
 
     // Getter

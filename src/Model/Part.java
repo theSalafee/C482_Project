@@ -1,6 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Model;
 
+/**
+ *
+ * @author naasirbush
+ */
+public /*abstract*/ class Part {
 
-public abstract class Part {
 
     // Private members
     private int id;
@@ -73,9 +83,5 @@ public abstract class Part {
     public void setMax(int max) {
         this.max = max;
     }
-
-
-
-
 
 }
