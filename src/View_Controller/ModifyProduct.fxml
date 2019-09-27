@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: e1f5fe;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyProductController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="57.0" prefWidth="1000.0" style="-fx-background-color: #1565c0;">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" text="Modify Product" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="160.0" layoutY="139.0" prefHeight="200.0" prefWidth="645.0" style="-fx-background-color: #90caf9; -fx-background-radius: 10px;">
+         <children>
+            <Label fx:id="modifyProductIdLabel" layoutX="76.0" layoutY="41.0" text="ID">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="modifyProdNameLabel" layoutX="310.0" layoutY="41.0" text="Name">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="modifyProdInventoryLabel" layoutX="73.0" layoutY="91.0" text="Inventory">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="modifyProdPriceLabel" layoutX="320.0" layoutY="89.0" text="Price">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="modifyProdMinLabel" layoutX="74.0" layoutY="137.0" text="Min.">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="modifyProductID" layoutX="110.0" layoutY="35.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="modifyProductName" layoutX="375.0" layoutY="38.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="modifyProductInventory" layoutX="158.0" layoutY="86.0" prefHeight="27.0" prefWidth="119.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="addPartPrice" layoutX="375.0" layoutY="85.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="modifyProductMin" layoutX="239.0" layoutY="134.0" prefHeight="27.0" prefWidth="45.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </TextField>
+            <Label fx:id="modifyProdMaxLabel" layoutX="321.0" layoutY="135.0" text="Max.">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="modifyProductMax" layoutX="497.0" layoutY="130.0" prefHeight="27.0" prefWidth="45.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </TextField>
+         </children>
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="33.0" layoutY="360.0" prefHeight="324.0" prefWidth="922.0" style="-fx-background-color: #90caf9; -fx-background-radius: 10px;">
+         <children>
+            <TableView fx:id="addProdTableView" layoutX="14.0" layoutY="19.0" prefHeight="228.0" prefWidth="422.0">
+               <columns>
+                  <TableColumn fx:id="productID" prefWidth="75.0" text="Product ID" />
+                  <TableColumn fx:id="productName" prefWidth="172.0" text="Product Name" />
+                  <TableColumn fx:id="productInventory" prefWidth="84.0" text="Inventory " />
+                  <TableColumn fx:id="productPricePerUnit" prefWidth="90.0" text="Price" />
+               </columns>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TableView>
+            <Button fx:id="addProductBtn" layoutX="377.0" layoutY="261.0" mnemonicParsing="false" onAction="#addProductHandler" text="Add">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TableView fx:id="deleteProdTableView" layoutX="482.0" layoutY="19.0" prefHeight="228.0" prefWidth="422.0">
+               <columns>
+                  <TableColumn prefWidth="82.0" text="Product ID" />
+                  <TableColumn prefWidth="175.0" text="Product Name" />
+                  <TableColumn prefWidth="81.0" text="Inventory " />
+                  <TableColumn prefWidth="82.0" text="Price" />
+               </columns>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </TableView>
+            <Button fx:id="deleteBtn" layoutX="823.0" layoutY="262.0" mnemonicParsing="false" onAction="#deleteProductHandler" text="Delete">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelBtn" layoutX="731.0" layoutY="261.0" mnemonicParsing="false" onAction="#cancelProductHandler" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveBtn" layoutX="656.0" layoutY="262.0" mnemonicParsing="false" onAction="#saveProductHandler" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </AnchorPane>
+      <TextField fx:id="productSearch" layoutX="779.0" layoutY="89.0" />
+      <Label fx:id="searchProductLabel" layoutX="712.0" layoutY="94.0" text="Search">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

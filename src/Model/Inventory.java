@@ -56,10 +56,14 @@ public class Inventory {
     // Products Methods //
     /////////////////////
 
-//    public static void addProduct(Model.Product product) {
-//
-//        return;
-//    }
+    //////////////////////
+    // Products Methods //
+    /////////////////////
+
+    public static void addProduct(Model.Product product) {
+
+        allProducts.add(product);;
+    }
 
 //    public static lookupProduct(int productID) {
 //
@@ -70,6 +74,14 @@ public class Inventory {
 //
 //        return ObservableList<Model.Product>;
 //    }
+
+    public static ObservableList<Product> getAllProducts() {
+
+        // Return entire ObservableList
+        return allProducts;
+    }
+
+
 
 
 
